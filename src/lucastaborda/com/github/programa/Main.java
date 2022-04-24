@@ -3,9 +3,9 @@ package lucastaborda.com.github.programa;
 import java.util.Locale;
 import java.util.Scanner;
 import lucastaborda.com.github.classes.Divisao;
-/*import classes.Multiplicacao;
+import classes.Multiplicacao;
 import classes.Soma;
-import classes.Subtracao;*/
+import classes.Subtracao;
 
 
 public class Main {
@@ -92,42 +92,60 @@ public class Main {
 
 	      switch (operation) {
 	      
-			/*
-			 * case "soma": Soma soma = new Soma(); switch (typeSelection) { case "inteiro":
-			 * resultado = (Integer)soma.calcula(makeIntArrays(qtySelection));
-			 * System.out.println("O resultado da soma solicitada é " + ((int) resultado) +
-			 * "."); break; case "float": resultado =
-			 * (Float)soma.calcula(makeFloatArrays(qtySelection));
-			 * System.out.println("O resultado da soma solicitada é " + ((float) resultado)
-			 * + "."); break; case "double": resultado =
-			 * (Double)soma.calcula(makeDoubleArrays(qtySelection));
-			 * System.out.println("O resultado da soma solicitada é " + ((double)resultado)
-			 * + "."); break; } break;
-			 * 
-			 * case "subtracao": Subtracao subtracao = new Subtracao(); switch
-			 * (typeSelection) { case "inteiro": resultado =
-			 * (Integer)subtracao.calcula(makeIntArrays(qtySelection));
-			 * System.out.println("O resultado da subtracao solicitada é " + ((int)
-			 * resultado) + "."); break; case "float": resultado =
-			 * (Float)subtracao.calcula(makeFloatArrays(qtySelection));
-			 * System.out.println("O resultado da subtracao solicitada é " + ((float)
-			 * resultado) + "."); break; case "double": resultado =
-			 * (Double)subtracao.calcula(makeDoubleArrays(qtySelection));
-			 * System.out.println("O resultado da subtracao solicitada é " +
-			 * ((double)resultado) + "."); break; } break;
-			 * 
-			 * case "multiplicacao": Multiplicacao multiplicacao = new Multiplicacao();
-			 * switch (typeSelection) { case "inteiro": resultado = (Integer)
-			 * multiplicacao.calcula(makeIntArrays(qtySelection));
-			 * System.out.println("O resultado da multiplicacao solicitada é " + ((int)
-			 * resultado) + "."); break; case "float": resultado = (Float)
-			 * multiplicacao.calcula(makeFloatArrays(qtySelection));
-			 * System.out.println("O resultado da multiplicacao solicitada é " +
-			 * ((float)resultado) + "."); break; case "double": resultado = (Double)
-			 * multiplicacao.calcula(makeDoubleArrays(qtySelection));
-			 * System.out.println("O resultado da multiplicacao solicitada é " +
-			 * ((double)resultado) + "."); ; } break;
-			 */
+			
+			  case "soma": Soma soma = new Soma();
+				  switch (typeSelection) {
+				  case "inteiro":
+		              resultado = (Integer) soma.calcula(makeIntArrays(qtySelection));
+		              System.out.println("O resultado da divisao solicitada é " + ((int)resultado) + ".");
+		              break;
+		            case "float":
+		              resultado = (Float) soma.calcula(makeFloatArrays(qtySelection));
+		              System.out.println("O resultado da divisao solicitada é " + ((float)resultado) + ".");
+		              break;
+		            case "double":
+		              resultado = (Double) soma.calcula(makeDoubleArrays(qtySelection));
+		              System.out.println("O resultado da divisao solicitada é " + ((double)resultado) + ".");
+		              break;
+		          }
+		          break;
+			  
+			  case "subtracao": 
+				  Subtracao subtracao = new Subtracao(); 
+				  switch (typeSelection) {
+				  case "inteiro":
+		              resultado = (Integer) subtracao.calcula(makeIntArrays(qtySelection));
+		              System.out.println("O resultado da divisao solicitada é " + ((int)resultado) + ".");
+		              break;
+		            case "float":
+		              resultado = (Float) subtracao.calcula(makeFloatArrays(qtySelection));
+		              System.out.println("O resultado da divisao solicitada é " + ((float)resultado) + ".");
+		              break;
+		            case "double":
+		              resultado = (Double) subtracao.calcula(makeDoubleArrays(qtySelection));
+		              System.out.println("O resultado da divisao solicitada é " + ((double)resultado) + ".");
+		              break;
+		          }
+		          break;
+			  
+			  case "multiplicacao": 
+				  Multiplicacao multiplicacao = new Multiplicacao();
+				  switch (typeSelection) {
+			  case "inteiro":
+	              resultado = (Integer) multiplicacao.calcula(makeIntArrays(qtySelection));
+	              System.out.println("O resultado da divisao solicitada é " + ((int)resultado) + ".");
+	              break;
+	            case "float":
+	              resultado = (Float) multiplicacao.calcula(makeFloatArrays(qtySelection));
+	              System.out.println("O resultado da divisao solicitada é " + ((float)resultado) + ".");
+	              break;
+	            case "double":
+	              resultado = (Double) multiplicacao.calcula(makeDoubleArrays(qtySelection));
+	              System.out.println("O resultado da divisao solicitada é " + ((double)resultado) + ".");
+	              break;
+	          }
+	          break;
+			 
 
 	        case "divisao":
 	          Divisao divisao = new Divisao();
@@ -141,7 +159,7 @@ public class Main {
 	              System.out.println("O resultado da divisao solicitada é " + ((float)resultado) + ".");
 	              break;
 	            case "double":
-	              resultado = (Double)divisao.calcula(makeDoubleArrays(qtySelection));
+	              resultado = (Double) divisao.calcula(makeDoubleArrays(qtySelection));
 	              System.out.println("O resultado da divisao solicitada é " + ((double)resultado) + ".");
 	              break;
 	          }
